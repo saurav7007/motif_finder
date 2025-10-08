@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Misc
+*.bak
+*~
+*.swp
+
+# Keep repository data files (e.g. resources/data) tracked unless intentionally ignored
+# Add more specific ignores below if needed

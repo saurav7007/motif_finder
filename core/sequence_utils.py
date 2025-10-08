@@ -1,5 +1,6 @@
 from Bio import SeqIO
 
+
 def load_fasta(file_path: str) -> dict[str, str]:
     """
     Load sequences from a FASTA file into a dictionary.
@@ -16,9 +17,3 @@ def load_fasta(file_path: str) -> dict[str, str]:
         sequences[record.id] = str(record.seq)
     
     return sequences
-
-if __name__=="__main__":
-    seqs = load_fasta("resources/data/dna2.fasta")
-
-    for seq_id, seq in seqs.items():
-        print(f"The {seq_id} has sequence {seq}.")
