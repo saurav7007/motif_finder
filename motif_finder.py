@@ -10,7 +10,7 @@ def find_overlapping_motif(infile: str, motif: str) -> None:
         positions = overlapping_motif(seq, motif)
         highlighted = highlight_motifs(seq, positions)
         print(f"\n> {seq_id}")
-        print(f"Motif '{motif}' found at positions: {positions}")
+        print(f"Motif '{motif}' found at {len(positions)} positions: {positions}")
         print(f"Highlighted sequence:\n{highlighted}\n")
 
 
